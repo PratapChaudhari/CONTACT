@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		 survay form of applicant
+	</title>
+
+	<style>
+		img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+  animation-name:;
+  animation-duration: 4s;
+}
+        
+		/* Styling the Body element i.e. Color,
+		Font, Alignment */
+		body {
+			font-family: 'Times New Roman', Times, serif;
+			text-align: center;
+			text-color: rgb(240, 231, 231);
+			
+			text-decoration-color: rgb(246, 247, 245);
+			text-rendering: geometricPrecision ;
+		}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: hsl(0, 17%, 83%);
+			max-width: 900px;
+			margin: 50px auto;
+			border-radius:50px ;
+			border-style:ridge;
+			border-top-color:#deb887;
+			border-bottom: rgb(228, 138, 21);
+			background-position: 0em;
+			box-decoration-break:clone;
+			padding: 70px 40px;
+			animation:cubic-bezier(200);
+			box-shadow: 2px 5px 10px rgba(116, 86, 86, 0.5);
+			animation-name:inherit;
+  animation-duration: 4s;
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid rgb(60, 21, 168);
+			border-radius: 100px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+			animation-name:initial;
+  animation-duration: 10s;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #c27b7f;
+			border: 1px solid rgba(63, 110, 36, 0.829);
+			border-radius: 100px;
+			font-family: 'Times New Roman', Times, serif;
+			font-size: 21px;
+			display: circle;
+			width: 100%;
+			margin-top: 70px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body background="https://image.freepik.com/free-vector/minimal-geometric-stripe-shape-background_1409-1014.jpg">
+	<h1 style="color: rgb(236, 232, 232);">pratap applicant form</h1>
+	<h2 style="color: rgb(250, 246, 246);">This form only allow for student</h2>
+    <h3 style="color: rgb(243, 243, 239);">wellcome </h3>
+	<!-- Create Form -->
+	<form id="form">
+
+		<!-- Details -->
+		<div class="form-control">
+			<label for="name" id="label-name">
+			Candidate name
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="name"
+				placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">
+				Email
+			</label>
+
+			<!-- Input Type Email-->
+			<input type="email"
+				id="email"
+				placeholder="Enter your email" />
+		</div>
+
+		<div class="form-control">
+			<label for="age" id="label-age">
+				Age
+			</label>
+
+			<!-- Input Type Text -->
+			<input type="text"
+				id="age"
+				placeholder="Enter your age(optional)" />
+		</div>
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes your current role?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="intern">internship</option>
+				<option value="professional">
+					Professional
+				</option>
+				<option value="other">Other field</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Would you recommed freeCodeCamp
+				to a friend?
+			</label>
+
+			<!-- Input Type Radio Button -->
+			<label for="recommed-1">
+				<input type="radio"
+					id="recommed-1"
+					name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio"
+					id="recommed-2"
+					name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"
+					id="recommed-3"
+					name="recommed">Maybe</input>
+			</label>
+		</div>
+        <div class="form-control">
+			<label for="role" id="label-role">
+				What is your favorite feature of freeCodeCamp?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="IT'S FREE">IT'S FREE</option>
+				<option value="CONTENT">CONTENT</option>
+				<option value="EASY TO USE">
+					EASY TO USE
+				</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+			<!-- Input Type Checkbox -->
+			<label for="inp-1">
+				<input type="checkbox"
+					name="inp">FRONT END Project</input></label>
+			<label for="inp-2">
+				<input type="checkbox"
+					name="inp">BACK END PROJECT</input></label>
+			<label for="inp-3">
+				<input type="checkbox"
+					name="inp">DATA VISUALISATION</input></label>
+			<label for="inp-4">
+				<input type="checkbox"
+					name="inp">CHALLENGES</input></label>
+			<label for="inp-5">
+				<input type="checkbox"
+					name="inp">OPEN SOURCE COMMUNITY</input></label>
+			<label for="inp-6">
+				<input type="checkbox"
+					name="inp">GITTER HELP ROOMS</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">VIDEOS</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">CITY MEETUPS</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">WIKI</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+			    	name="inp">FORUM</input></label>
+			<label for="inp-7">
+				<input type="checkbox"
+					name="inp">ADDITIONAL COURSES</input></label>		
+		</div>
+        
+		<div class="form-control">
+			<label for="comment">
+				Enter comments or suggestions
+			</label>
+
+			<!-- multi-line text input control -->
+			<textarea name="comment" id="comment"
+				
+		        placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<!-- Multi-line Text Input Control -->
+		<button type="submit" value="submit Here">
+			SUBMIT
+		</button>
+	</form>
+</body>
+
+</html>
